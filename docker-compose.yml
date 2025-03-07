@@ -1,0 +1,9 @@
+services:
+  chat_room:
+    image: chat
+    build: .
+    ports:
+      - 7777:8888
+    environment:
+      - CHAT_PORT=8888
+      - MAX_USERS=10
